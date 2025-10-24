@@ -11,38 +11,45 @@
             border: 3px solid black;
             border-top: 5px solid black;
             padding: 10px;
+            text-align: center;
+        }
+        textarea{
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            resize: vertical;
         }
     </style>
 </head>
 <body>
     <form action="action_page.php" class="my-div">
-        <h1 style="text-align: center;">Hotel Room Booking Form</h1>
-        <div style="text-align: center;">
+        <h1>Hotel Room Booking Form</h1>
+        <div>
             <label for="name">Full Name:</label>
             <input type="text" id="name" required placeholder="Enter your name">
         </div>
         <br>
-        <div style="text-align: center;">
+        <div >
             <label for="em">Email</label>
             <input type="email" id="em" required placeholder="Enter Email" >
         </div>
         <br>
-        <div style="text-align: center;">
+        <div>
             <label for="phn">Phone:</label>
-            <input type="number" id="phn" maxlength="10" required placeholder="Enter No.">
+            <input type="text" id="phn" maxlength="10" required placeholder="Enter No.">
         </div>
         <br>
-        <div style="text-align: center;">
+        <div>
             <label for="dti">Check-in Date:</label>
             <input type="date" id="dti" >
         </div>
         <br>
-        <div style="text-align: center;">
+        <div>
             <label for="dto">Check-out Date:</label>
             <input type="date" id="dto" >
         </div>
         <br>
-        <div style="text-align: center;">
+        <div>
             <label for="Rtp">Room Type:</label>
             <select name="Rooms" id="rooms">
                 <option value="Single Bed room">Single Bed room</option>
@@ -52,6 +59,12 @@
                 <option value="presidential suite"> presidential suite </option>
             </select>
         </div>
+            <div>
+                <label for="ng">Number of guests:</label>
+                <input type="number" id="ng" min="0" max="10">
+            </div>
+            <br>
+           
         <br>
     </form>
 </body>
